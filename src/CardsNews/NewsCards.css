@@ -1,0 +1,321 @@
+/* News Title Container */
+.news-title-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+/* News Cards Styling */
+.location-card,
+.production-card {
+    position: relative;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.location-card:hover,
+.production-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.location-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: black;
+}
+
+.production-card {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: black;
+}
+
+/* News Content */
+.news-content {
+    margin-top: 0;
+    order: 2;
+    flex-grow: 1;
+    /* Allow content to grow and push actions to bottom */
+    display: flex;
+    flex-direction: column;
+    /* Ensure content appears after image */
+}
+
+/* News Image Styling */
+.news-image-container {
+    position: relative;
+    margin-top: 0;
+    /* Remove top margin to ensure consistent positioning */
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    order: 1;
+    /* Ensure image appears in consistent position */
+}
+
+.news-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.news-image:hover {
+    transform: scale(1.02);
+}
+
+.image-ai-indicator {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(4px);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* News Title */
+.news-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    min-height: 1.5em;
+    /* Ensures consistent height for single or double line titles */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* News Summary */
+.news-summary {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+/* News Meta */
+.news-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.news-date {
+    font-style: italic;
+}
+
+.news-source {
+    font-weight: 500;
+}
+
+.fallback-indicator {
+    font-size: 0.9rem;
+    cursor: help;
+}
+
+.ai-indicator {
+    font-size: 0.9rem;
+    cursor: help;
+    color: #4caf50;
+}
+
+/* News Actions */
+.news-actions {
+    margin-top: auto;
+    /* Push actions to bottom of card */
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.read-more-link {
+    color: #1a1a1a;
+    background: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    transition: all 0.2s ease;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.read-more-link:hover {
+    color: #000;
+    background: rgba(255, 255, 255, 1);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+}
+
+/* Loading States */
+.news-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.loading-spinner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.loading {
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+    animation: pulse 1.5s ease-in-out infinite;
+    margin: 0;
+}
+
+/* Error States */
+.news-error {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.error {
+    color: #ffeb3b;
+    font-size: 0.85rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem;
+    border-radius: 4px;
+    border-left: 3px solid #ff9800;
+    margin-bottom: 1rem;
+}
+
+.retry-button,
+.refresh-button {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.2s ease;
+}
+
+.retry-button:hover,
+.refresh-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.refresh-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Empty State */
+.no-news {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    text-align: center;
+    padding: 2rem 0;
+    margin: 0;
+}
+
+/* News Tag Styling */
+.news-tag-container {
+    margin-bottom: 1.25rem;
+    min-height: 1.875rem;
+    /* Ensures consistent height even if tag wraps */
+    display: flex;
+    align-items: flex-start;
+}
+
+.news-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.25rem 0.625rem;
+    border-radius: 1rem;
+    font-size: 0.625rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: 0 1px 6px rgba(102, 126, 234, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.news-tag:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.35);
+}
+
+/* Animations */
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .location-card,
+    .production-card {
+        padding: 1rem;
+        min-height: 180px;
+    }
+
+    .news-title {
+        font-size: 1rem;
+    }
+
+    .news-summary {
+        font-size: 0.85rem;
+    }
+
+    .refresh-button {
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 28px;
+        height: 28px;
+        font-size: 0.8rem;
+    }
+}

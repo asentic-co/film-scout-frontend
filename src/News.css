@@ -1,0 +1,193 @@
+/* News page specific styling */
+.news-page {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    /* Increased top padding to replace removed heading */
+}
+
+.news-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* News page sections */
+.news-page section {
+    margin-bottom: 3rem;
+}
+
+.news-page section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #374151;
+    text-align: left;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}
+
+/* News page grid layout - always 3 columns for both sections */
+.news-page .grid-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 0;
+}
+
+/* Ensure cards in News page have consistent height */
+.news-page .card {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-top: 3px solid #e0e7ff;
+    transition: border-top-color 0.3s ease, transform 0.2s ease;
+}
+
+.news-page .card:hover {
+    border-top-color: #667eea;
+    transform: translateY(-2px);
+}
+
+/* Medium screens: maintain 3 columns but with smaller gaps */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .news-page .grid-row {
+        gap: 1rem;
+    }
+
+    .news-page .card {
+        min-height: 220px;
+    }
+}
+
+/* Tablet screens: 2 columns */
+@media (max-width: 768px) and (min-width: 481px) {
+    .news-page .grid-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .news-page .card {
+        min-height: 200px;
+    }
+}
+
+/* News Loading Animation */
+.news-loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    gap: 1.5rem;
+}
+
+.news-loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #e5e7eb;
+    border-top: 4px solid #667eea;
+    border-radius: 50%;
+    animation: newsSpinner 1s linear infinite;
+}
+
+.news-loading-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.gathering-text {
+    animation: newsPulse 2s ease-in-out infinite;
+}
+
+.loading-dots span {
+    animation: newsDotBounce 1.4s ease-in-out infinite both;
+}
+
+.loading-dots span:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.loading-dots span:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+.loading-dots span:nth-child(3) {
+    animation-delay: 0s;
+}
+
+@keyframes newsSpinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes newsPulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes newsDotBounce {
+
+    0%,
+    80%,
+    100% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+
+    40% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Mobile screens: 1 column */
+@media (max-width: 480px) {
+    .news-page .grid-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .news-page .card {
+        min-height: 180px;
+    }
+
+    .news-title {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .news-page section h2 {
+        font-size: 1.5rem;
+    }
+
+    .news-loading-container {
+        min-height: 250px;
+    }
+
+    .news-loading-text {
+        font-size: 1rem;
+    }
+}

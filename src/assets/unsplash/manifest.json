@@ -1,0 +1,293 @@
+{
+  "downloadDate": "2025-07-21T19:35:24.063Z",
+  "totalImages": 24,
+  "downloaded": 18,
+  "failed": 6,
+  "images": [
+    {
+      "filename": "production-01-cameras-crew.jpg",
+      "altText": "Film production with professional cameras and crew",
+      "source": "Unsplash - Jakob Owens",
+      "originalUrl": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "production-02-studio-lighting.jpg",
+      "altText": "Movie studio with lighting and equipment",
+      "source": "Unsplash - Alex Litvin",
+      "originalUrl": "https://images.unsplash.com/photo-1489599849219-f06a7ad3bf8d?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "production-03-behind-scenes.jpg",
+      "altText": "Behind the scenes film production",
+      "source": "Unsplash - Denise Jans",
+      "originalUrl": "https://images.unsplash.com/photo-1596215143077-ca928c7ac421?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "production-04-streaming.jpg",
+      "altText": "Netflix and streaming content production",
+      "source": "Unsplash - Mollie Sivaram",
+      "originalUrl": "https://images.unsplash.com/photo-1518900673653-cf9fdd01e430?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "production-05-ai-virtual.jpg",
+      "altText": "AI and virtual production technology",
+      "source": "Unsplash - Possessed Photography",
+      "originalUrl": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "location-01-nyc-skyline.jpg",
+      "altText": "New York City skyline filming location",
+      "source": "Unsplash - Luca Bravo",
+      "originalUrl": "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "location-02-urban-architecture.jpg",
+      "altText": "Urban filming location with architecture",
+      "source": "Unsplash - Leonel Fernandez",
+      "originalUrl": "https://images.unsplash.com/photo-1522083165195-3424ed129620?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "location-03-scenic-outdoor.jpg",
+      "altText": "Scenic outdoor filming location",
+      "source": "Unsplash - Luca Bravo",
+      "originalUrl": "https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "location-04-high-line.jpg",
+      "altText": "High Line elevated park NYC",
+      "source": "Unsplash - Luca Bravo",
+      "originalUrl": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "location-05-brooklyn-bridge.jpg",
+      "altText": "Brooklyn Bridge iconic filming location",
+      "source": "Unsplash - Jermaine Ee",
+      "originalUrl": "https://images.unsplash.com/photo-1541963463532-d68292c34d19?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "production-06-camera-operator.jpg",
+      "altText": "Professional camera operator filming",
+      "source": "Unsplash - Jakob Owens",
+      "originalUrl": "https://images.unsplash.com/photo-1529612700005-e35377bf1415?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "production-07-video-editing.jpg",
+      "altText": "Video editing and post-production",
+      "source": "Unsplash - Banks Brianson",
+      "originalUrl": "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "production-08-film-reels.jpg",
+      "altText": "Classic film reels and cinema equipment",
+      "source": "Unsplash - Denise Jans",
+      "originalUrl": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "production-09-cinema-theater.jpg",
+      "altText": "Movie theater and cinema experience",
+      "source": "Unsplash - Nathan Engel",
+      "originalUrl": "https://images.unsplash.com/photo-1478720568477-b0820c8ca388?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "production-10-sound-recording.jpg",
+      "altText": "Professional sound recording equipment",
+      "source": "Unsplash - Austin Neill",
+      "originalUrl": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "production-11-film-crew.jpg",
+      "altText": "Film crew working on production",
+      "source": "Unsplash - Sam McGhee",
+      "originalUrl": "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "production-12-director-chair.jpg",
+      "altText": "Director chair on film set",
+      "source": "Unsplash - Martin Reisch",
+      "originalUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "location-06-los-angeles.jpg",
+      "altText": "Los Angeles downtown skyline",
+      "source": "Unsplash - Dan Freeman",
+      "originalUrl": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "location-07-chicago.jpg",
+      "altText": "Chicago urban architecture",
+      "source": "Unsplash - Sawyer Bengtson",
+      "originalUrl": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "location-08-miami.jpg",
+      "altText": "Miami beach and skyline",
+      "source": "Unsplash - Marcin Czerniawski",
+      "originalUrl": "https://images.unsplash.com/photo-1554072675-66db59dba46f?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "location-09-mountain.jpg",
+      "altText": "Mountain landscape filming location",
+      "source": "Unsplash - Simon Berger",
+      "originalUrl": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "location-10-desert.jpg",
+      "altText": "Desert landscape filming location",
+      "source": "Unsplash - Alexander Kunze",
+      "originalUrl": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "location-11-forest.jpg",
+      "altText": "Forest and woodland filming location",
+      "source": "Unsplash - Geran de Klerk",
+      "originalUrl": "https://images.unsplash.com/photo-1464822759844-d150baec843a?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "location-12-warehouse.jpg",
+      "altText": "Industrial warehouse filming location",
+      "source": "Unsplash - Nik Guiney",
+      "originalUrl": "https://images.unsplash.com/photo-1509022792455-8663c24c1b7e?w=800&h=450&fit=crop&crop=center"
+    },
+    {
+      "filename": "location-nyc-01-brooklyn-streets.jpg",
+      "altText": "Brooklyn street scene with brownstones",
+      "source": "Unsplash - Luca Bravo",
+      "originalUrl": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=800&h=450&fit=crop&crop=center",
+      "tags": [
+        "brooklyn",
+        "streets",
+        "urban",
+        "filming"
+      ],
+      "category": "nyc-locations",
+      "addedDate": "2025-07-21T20:17:04.458Z"
+    },
+    {
+      "filename": "location-nyc-02-central-park.jpg",
+      "altText": "Central Park scenic view for filming",
+      "source": "Unsplash - Anthony Fomin",
+      "originalUrl": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800&h=450&fit=crop&crop=center",
+      "tags": [
+        "central-park",
+        "nature",
+        "manhattan",
+        "scenic"
+      ],
+      "category": "nyc-locations",
+      "addedDate": "2025-07-21T20:17:04.458Z"
+    },
+    {
+      "filename": "location-nyc-03-times-square.jpg",
+      "altText": "Times Square bustling street scene",
+      "source": "Unsplash - Lance Anderson",
+      "originalUrl": "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=800&h=450&fit=crop&crop=center",
+      "tags": [
+        "times-square",
+        "lights",
+        "crowds",
+        "iconic"
+      ],
+      "category": "nyc-locations",
+      "addedDate": "2025-07-21T20:17:04.458Z"
+    },
+    {
+      "filename": "location-nyc-04-manhattan-street.jpg",
+      "altText": "Manhattan street canyon with yellow taxi",
+      "source": "Unsplash - Luca Bravo",
+      "originalUrl": "https://images.unsplash.com/photo-1518391846015-55a9cc003b25?w=800&h=450&fit=crop&crop=center",
+      "tags": [
+        "manhattan",
+        "taxi",
+        "street",
+        "urban"
+      ],
+      "category": "nyc-locations",
+      "addedDate": "2025-07-21T20:17:04.458Z"
+    },
+    {
+      "filename": "location-nyc-05-brooklyn-bridge-view.jpg",
+      "altText": "Brooklyn Bridge architectural perspective",
+      "source": "Unsplash - Jermaine Ee",
+      "originalUrl": "https://images.unsplash.com/photo-1541963463532-d68292c34d19?w=800&h=450&fit=crop&crop=center",
+      "tags": [
+        "brooklyn-bridge",
+        "architecture",
+        "iconic",
+        "water"
+      ],
+      "category": "nyc-locations",
+      "addedDate": "2025-07-21T20:17:04.458Z"
+    },
+    {
+      "filename": "location-nyc-06-rooftop-skyline.jpg",
+      "altText": "NYC rooftop view with Manhattan skyline",
+      "source": "Unsplash - Luca Bravo",
+      "originalUrl": "https://images.unsplash.com/photo-1549972574-8e3e1ed6a347?w=800&h=450&fit=crop&crop=center",
+      "tags": [
+        "rooftop",
+        "skyline",
+        "manhattan",
+        "aerial"
+      ],
+      "category": "nyc-locations",
+      "addedDate": "2025-07-21T20:17:04.458Z"
+    },
+    {
+      "filename": "location-nyc-07-subway-station.jpg",
+      "altText": "NYC subway station underground scene",
+      "source": "Unsplash - MTA",
+      "originalUrl": "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=800&h=450&fit=crop&crop=center",
+      "tags": [
+        "subway",
+        "underground",
+        "transit",
+        "urban"
+      ],
+      "category": "nyc-locations",
+      "addedDate": "2025-07-21T20:17:04.458Z"
+    },
+    {
+      "filename": "location-nyc-08-chinatown.jpg",
+      "altText": "Chinatown NYC street with lanterns",
+      "source": "Unsplash - Francesca Hotchin",
+      "originalUrl": "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=800&h=450&fit=crop&crop=center",
+      "tags": [
+        "chinatown",
+        "cultural",
+        "lanterns",
+        "diverse"
+      ],
+      "category": "nyc-locations",
+      "addedDate": "2025-07-21T20:17:04.458Z"
+    },
+    {
+      "filename": "location-nyc-09-wall-street.jpg",
+      "altText": "Wall Street financial district",
+      "source": "Unsplash - Aditya Vyas",
+      "originalUrl": "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=800&h=450&fit=crop&crop=center",
+      "tags": [
+        "wall-street",
+        "financial",
+        "corporate",
+        "historic"
+      ],
+      "category": "nyc-locations",
+      "addedDate": "2025-07-21T20:17:04.458Z"
+    },
+    {
+      "filename": "location-nyc-10-coney-island.jpg",
+      "altText": "Coney Island boardwalk and beach",
+      "source": "Unsplash - Luca Bravo",
+      "originalUrl": "https://images.unsplash.com/photo-1496588152823-86ff7695e68f?w=800&h=450&fit=crop&crop=center",
+      "tags": [
+        "coney-island",
+        "beach",
+        "boardwalk",
+        "entertainment"
+      ],
+      "category": "nyc-locations",
+      "addedDate": "2025-07-21T20:17:04.458Z"
+    }
+  ],
+  "lastUpdate": "2025-07-21T20:17:04.456Z"
+}

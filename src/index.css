@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom layer to override Tailwind base styles for dashboard components */
+@layer components {
+
+  /* Preserve your existing dashboard styling */
+  .dashboard-container {
+    @apply flex flex-col gap-4 pt-6;
+  }
+
+  .page-container {
+    @apply max-w-5xl mx-auto w-full p-0 box-border;
+  }
+
+  .card {
+    @apply bg-white p-4 rounded-lg shadow-sm border-t-4 border-transparent transition-all duration-300;
+    min-height: 220px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .card:hover {
+    @apply border-t-indigo-400;
+  }
+
+  .grid-row:first-of-type .card {
+    @apply border-t-indigo-200;
+  }
+
+  .grid-row:first-of-type .card:hover {
+    @apply border-t-indigo-400;
+  }
+
+  .grid-row {
+    @apply grid gap-4;
+  }
+
+  .grid-row:first-of-type {
+    @apply grid-cols-3;
+  }
+
+  .grid-row:nth-of-type(2) {
+    @apply grid-cols-3;
+  }
+
+  .grid-row:nth-of-type(3) {
+    @apply grid-cols-1;
+  }
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  background-color: #f5f3fa !important;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+  background: linear-gradient(180deg, #faf9fc 0%, #f5f3fa 100%);
+  height: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Keep any essential button styles that shouldn't be overridden by Tailwind */
+@layer components {
+  .custom-button {
+    @apply bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition-colors duration-300;
+  }
+
+  .custom-button:hover {
+    @apply bg-blue-700;
+  }
+}
