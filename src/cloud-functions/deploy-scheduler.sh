@@ -7,7 +7,7 @@ echo "Deploying scheduled news refresh function..."
 
 gcloud functions deploy refreshNews \
     --gen2 \
-    --runtime=nodejs18 \
+    --runtime=nodejs22 \
     --region=us-central1 \
     --source=. \
     --entry-point=refreshNews \

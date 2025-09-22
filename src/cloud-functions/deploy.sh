@@ -50,7 +50,7 @@ echo "☁️ Deploying Cloud Functions with AI capabilities and image generation
 
 # Deploy enhanced news aggregator function with images
 gcloud functions deploy aggregateNewsWithImages \
-  --runtime nodejs18 \
+  --runtime nodejs22 \
   --trigger-http \
   --allow-unauthenticated \
   --region=$REGION \
@@ -61,7 +61,7 @@ gcloud functions deploy aggregateNewsWithImages \
 
 # Deploy original news aggregator function for backward compatibility
 gcloud functions deploy aggregateNews \
-  --runtime nodejs18 \
+  --runtime nodejs22 \
   --trigger-http \
   --allow-unauthenticated \
   --region=$REGION \
@@ -72,7 +72,7 @@ gcloud functions deploy aggregateNews \
 
 # Deploy news API function  
 gcloud functions deploy getNews \
-  --runtime nodejs18 \
+  --runtime nodejs22 \
   --trigger-http \
   --allow-unauthenticated \
   --region=$REGION \

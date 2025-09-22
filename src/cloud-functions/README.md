@@ -67,8 +67,8 @@ If you prefer manual deployment:
 npm install
 
 # Deploy functions individually
-gcloud functions deploy aggregateNews --runtime nodejs18 --trigger-http --allow-unauthenticated
-gcloud functions deploy getNews --runtime nodejs18 --trigger-http --allow-unauthenticated
+gcloud functions deploy aggregateNews --runtime nodejs22 --trigger-http --allow-unauthenticated
+gcloud functions deploy getNews --runtime nodejs22 --trigger-http --allow-unauthenticated
 
 # Set up scheduler
 gcloud scheduler jobs create http monthly-news-aggregation \
