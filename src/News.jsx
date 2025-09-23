@@ -41,15 +41,14 @@ export default function News() {
     const shuffled = shuffleArray(allCards);
     setShuffledCards(shuffled);
 
-    // Set loading to false when preloading is complete and we have images
-    if (preloadingComplete && images) {
+    // Set loading to false when preloading is complete, we have images, AND news data
+    if (preloadingComplete && images && news && news.length > 0) {
       setLoading(false);
     } else if (preloadingComplete && !images) {
       // Fallback: fetch images if preloading failed
       console.log('[News] Fallback: fetching curated images');
       curatedNewsImageClient.fetchUniqueRandomCuratedImages(6)
         .then(results => {
-          // This will be handled by the context now
           setLoading(false);
         })
         .catch(error => {
@@ -57,7 +56,7 @@ export default function News() {
           setLoading(false);
         });
     }
-  }, [preloadingComplete, images]);
+  }, [preloadingComplete, images, news]); // Add news to dependency array
 
   // Use preloaded images or fallback
   const displayImages = images || Array(6).fill({ url: null, alt: 'Image unavailable', error: 'Failed to load' });
@@ -91,7 +90,9 @@ export default function News() {
         <div className="grid-row">
           {firstRow.map((card, idx) => {
             const CardComponent = card.component;
-            return <CardComponent key={card.id} image={displayImages[idx]} />;
+            // Pass both image and news data to the card components
+            const newsItem = news && news[idx] ? news[idx] : null;
+            return <CardComponent key={card.id} image={displayImages[idx]} news={newsItem} />;
           })}
         </div>
       </section>
@@ -101,7 +102,8 @@ export default function News() {
         <div className="grid-row">
           {secondRow.map((card, idx) => {
             const CardComponent = card.component;
-            return <CardComponent key={card.id} image={displayImages[idx + 3]} />;
+            const newsItem = news && news[idx + 3] ? news[idx + 3] : null;
+            return <CardComponent key={card.id} image={displayImages[idx + 3]} news={newsItem} />;
           })}
         </div>
       </section>
