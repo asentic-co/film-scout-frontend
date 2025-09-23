@@ -1,11 +1,12 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
+import { getNewsApiBaseUrl } from '../utils/apiConfig';
 
 export const NewsContext = createContext();
 export const useNewsContext = () => useContext(NewsContext);
 
 // Read base URL for news API from Vite env (VITE_ prefix) with a safe fallback
 const NEWS_API_URL = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_NEWS_API_URL)
-  || 'https://us-central1-ai-solutions-441621.cloudfunctions.net/getNews';
+  || getNewsApiBaseUrl();
 
 export function NewsProvider({ children, preloadedNews, preloadedImages, preloadingComplete }) {
   const [newsRaw, setNewsRaw] = useState(preloadedNews);

@@ -10,6 +10,7 @@ import NewsImageTest from "./components/NewsImageTest";
 import ImageReview from "./components/ImageReview";
 import PreloadingIndicator from "./components/PreloadingIndicator";
 import curatedNewsImageClient from "./utils/curatedNewsImageClient";
+import { NEWS_API_ENDPOINTS, getNewsApiBaseUrl } from "./utils/apiConfig";
 import { preloadImageObjects } from "./utils/imagePreloader";
 import './App.css';
 
@@ -33,11 +34,10 @@ export default function App() {
         console.log('[App] Starting content pre-loading...');
 
         // Pre-load news data
+        const newsBase = getNewsApiBaseUrl();
         const [productionData, locationData] = await Promise.all([
-          fetch("https://us-central1-ai-solutions-441621.cloudfunctions.net/getNews?type=production&limit=3")
-            .then(res => res.json()),
-          fetch("https://us-central1-ai-solutions-441621.cloudfunctions.net/getNews?type=location&limit=3")
-            .then(res => res.json())
+          fetch(`${newsBase}?type=production&limit=3`).then(res => res.json()),
+          fetch(`${newsBase}?type=location&limit=3`).then(res => res.json())
         ]);
 
         // Normalize to arrays if needed

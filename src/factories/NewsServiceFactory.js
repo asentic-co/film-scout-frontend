@@ -35,7 +35,8 @@ class NewsServiceFactory {
     // Create service with different configurations for different environments
     static createForProduction() {
         return this.create({
-            baseUrl: 'https://us-central1-ai-solutions-441621.cloudfunctions.net/getNews',
+            // Let deployment-time configuration provide the actual URL. Use a generic origin-relative default.
+            baseUrl: typeof window !== 'undefined' ? `${window.location.origin}/getNews` : 'https://your-production-getnews.example/getNews',
             enableCache: true,
             cacheTimeout: 10 * 60 * 1000, // 10 minutes for production
         });

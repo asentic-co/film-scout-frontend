@@ -20,8 +20,11 @@ const getApiBaseUrl = () => {
 };
 
 const getNewsApiBaseUrl = () => {
-    // Use dedicated News API environment variable
-    return import.meta.env.VITE_NEWS_API_URL || 'https://us-central1-ai-solutions-441621.cloudfunctions.net/getNews';
+    // Use dedicated News API environment variable (VITE_NEWS_API_URL)
+    // If not set, fall back to a generic relative path so local setups can proxy if needed.
+    if (import.meta.env && import.meta.env.VITE_NEWS_API_URL) return import.meta.env.VITE_NEWS_API_URL;
+    // Prefer a relative path (so developers can proxy to their function locally)
+    return `${window.location.origin}/getNews`;
 };
 
 // Export individual API endpoints for main service (App/Dashboard)

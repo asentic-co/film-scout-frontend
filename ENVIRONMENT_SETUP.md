@@ -13,7 +13,7 @@ This project supports multiple environments with different API configurations fo
 VITE_API_URL=http://localhost:4000
 
 # Service 2: News API for News page components
-VITE_NEWS_API_URL=https://us-central1-ai-solutions-441621.cloudfunctions.net/getNews
+VITE_NEWS_API_URL=http://localhost:8080/getNews
 
 # Environment identifier
 VITE_ENVIRONMENT=local
@@ -26,7 +26,7 @@ This is used when running the frontend locally with `npm run dev` and the backen
 VITE_API_URL=https://api.filmscout.app
 
 # Service 2: News API for News page components
-VITE_NEWS_API_URL=https://us-central1-ai-solutions-441621.cloudfunctions.net/getNews
+VITE_NEWS_API_URL=<GET_NEWS_URL>  # e.g. https://us-central1-your-project.cloudfunctions.net/getNews
 
 # Environment identifier
 VITE_ENVIRONMENT=docker
@@ -39,7 +39,7 @@ This is used when deploying to the Docker-hosted dev service.
 VITE_API_URL=https://api.filmscout.app
 
 # Service 2: News API for News page components
-VITE_NEWS_API_URL=https://us-central1-ai-solutions-441621.cloudfunctions.net/getNews
+VITE_NEWS_API_URL=<GET_NEWS_URL>  # e.g. https://us-central1-your-project.cloudfunctions.net/getNews
 
 # Environment identifier
 VITE_ENVIRONMENT=production
@@ -65,7 +65,7 @@ This configuration should be set as environment variables in Vercel dashboard.
 ### Vercel Production Deployment
 1. Set environment variables in Vercel dashboard:
    - `VITE_API_URL=https://api.filmscout.app`
-   - `VITE_NEWS_API_URL=https://us-central1-ai-solutions-441621.cloudfunctions.net/getNews`
+   - `VITE_NEWS_API_URL=<GET_NEWS_URL>  # e.g. https://us-central1-your-project.cloudfunctions.net/getNews`
    - `VITE_ENVIRONMENT=production`
 2. Deploy to Vercel
 3. Both services will use production URLs

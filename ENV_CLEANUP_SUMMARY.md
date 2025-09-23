@@ -19,7 +19,7 @@
   - Production: `https://api.filmscout.app`
   
 - **Service 2 (News API)**: Used only by News page components via newsService.js
-  - All environments: `https://us-central1-ai-solutions-441621.cloudfunctions.net/getNews`
+  - All environments: `<GET_NEWS_URL>` (set via `VITE_NEWS_API_URL`)
 
 ### 4. Code Updates
 - **`src/services/newsService.js`**: Now uses `VITE_NEWS_API_URL` instead of `VITE_API_URL`
@@ -47,7 +47,7 @@ cp .env.docker .env
 #### For Vercel Production:
 Set these environment variables in Vercel dashboard:
 - `VITE_API_URL=https://api.filmscout.app`
-- `VITE_NEWS_API_URL=https://us-central1-ai-solutions-441621.cloudfunctions.net/getNews`
+- `VITE_NEWS_API_URL=<GET_NEWS_URL>  # e.g. https://us-central1-your-project.cloudfunctions.net/getNews`
 - `VITE_ENVIRONMENT=production`
 
 ## Migration Notes

@@ -4,7 +4,8 @@ async function testEnhancedImages() {
 
     try {
         // Test production news
-        const prodResponse = await fetch('https://us-central1-ai-solutions-441621.cloudfunctions.net/getNews?type=production&limit=1');
+        const newsBase = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_NEWS_API_URL) || `${typeof window !== 'undefined' ? window.location.origin : 'http://localhost:8080'}/getNews`;
+        const prodResponse = await fetch(`${newsBase}?type=production&limit=1`);
         const prodNews = await prodResponse.json();
 
         console.log('📰 Production News Test:');
@@ -15,7 +16,7 @@ async function testEnhancedImages() {
         console.log('');
 
         // Test location news
-        const locResponse = await fetch('https://us-central1-ai-solutions-441621.cloudfunctions.net/getNews?type=location&limit=1');
+        const locResponse = await fetch(`${newsBase}?type=location&limit=1`);
         const locNews = await locResponse.json();
 
         console.log('📍 Location News Test:');

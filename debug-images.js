@@ -5,7 +5,8 @@ async function debugProductionImages() {
     // Test direct API call
     try {
         console.log('1. Testing direct API call...');
-        const response = await fetch('https://us-central1-ai-solutions-441621.cloudfunctions.net/getNews?type=production&limit=1');
+        const newsBase = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_NEWS_API_URL) || `${window.location.origin}/getNews`;
+        const response = await fetch(`${newsBase}?type=production&limit=1`);
         const data = await response.json();
         console.log('✅ Direct API Response:', data[0]);
         console.log('   Has image?', !!data[0].image);
