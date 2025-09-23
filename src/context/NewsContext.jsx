@@ -3,6 +3,10 @@ import React, { createContext, useState, useEffect, useContext } from 'react';
 export const NewsContext = createContext();
 export const useNewsContext = () => useContext(NewsContext);
 
+// Read base URL for news API from Vite env (VITE_ prefix) with a safe fallback
+const NEWS_API_URL = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_NEWS_API_URL)
+  || 'https://us-central1-ai-solutions-441621.cloudfunctions.net/getNews';
+
 export function NewsProvider({ children, preloadedNews, preloadedImages, preloadingComplete }) {
   const [newsRaw, setNewsRaw] = useState(preloadedNews);
   const [newsLoading, setNewsLoading] = useState(!preloadingComplete);
@@ -26,10 +30,8 @@ export function NewsProvider({ children, preloadedNews, preloadedImages, preload
       console.log('[NewsContext] Fallback: fetching news data');
       setNewsLoading(true);
       Promise.all([
-        fetch("https://us-central1-ai-solutions-441621.cloudfunctions.net/getNews?type=production&limit=3")
-          .then(res => res.json()),
-        fetch("https://us-central1-ai-solutions-441621.cloudfunctions.net/getNews?type=location&limit=3")
-          .then(res => res.json())
+        fetch(`${NEWS_API_URL}?type=production&limit=3`).then(res => res.json()),
+        fetch(`${NEWS_API_URL}?type=location&limit=3`).then(res => res.json())
       ])
         .then(([productionData, locationData]) => {
           // Normalize to arrays if needed
