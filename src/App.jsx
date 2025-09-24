@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 import Dashboard from "./Dashboard";
 import News from "./News";
 import About from "./About";
-// import NewsImages from "./NewsImages";
+import NewsImages from "./NewsImages";
 import NewsImageTest from "./components/NewsImageTest";
 import ImageReview from "./components/ImageReview";
 import PreloadingIndicator from "./components/PreloadingIndicator";
