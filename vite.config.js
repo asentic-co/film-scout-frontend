@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => {
       host: '0.0.0.0',
       port: 5173,
       strictPort: true,
-      allowedHosts: ['scout-dev.asentic.co', 'localhost', '.vercel.app', 'filmscout.app'],
+      allowedHosts: ['dev.filmscout.app', 'localhost', '.vercel.app', 'filmscout.app'],
     },
   }
 })
