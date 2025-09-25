@@ -10,14 +10,11 @@ import "../styles/StatusLight.css";
 import prdWait from "../assets/prd-wait.png";
 import prdWork from "../assets/prd-work.png";
 
-// Helper to get backend base URL depending on environment
+// Helper to get backend base URL from environment variables
 const getBackendBaseUrl = () => {
   if (typeof window !== 'undefined') {
-    if (window.location.hostname === 'localhost') {
-      return 'http://localhost:4000';
-    } else {
-      return 'https://api.filmscout.app';
-    }
+    // Use VITE_API_URL from environment variables, fallback to localhost for development
+    return import.meta.env.VITE_API_URL || 'http://localhost:4000';
   }
   return '';
 };
