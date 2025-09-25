@@ -78,15 +78,19 @@ export default function RawDataCard({ record, isSearching, setRawDataComplete })
                     <div className="flex items-center mb-2">
                         <span className="flex items-center font-medium">
                             Searching database
-                            <span className="ml-1 flex" style={{ alignItems: 'flex-start', marginTop: '-0.7em' }}>
+                            <span className="ml-1 flex items-center" style={{ height: '1.5em', overflow: 'hidden' }}>
                                 {[0, 1, 2].map((i) => (
                                     <motion.span
                                         key={i}
                                         custom={i}
                                         variants={dotVariants}
                                         animate="animate"
-                                        className="font-bold text-2xl"
-                                        style={{ marginLeft: "0.1em", marginRight: "0.1em" }}
+                                        className="font-bold text-2xl inline-block"
+                                        style={{ 
+                                            marginLeft: "0.1em", 
+                                            marginRight: "0.1em",
+                                            transformOrigin: 'center'
+                                        }}
                                     >
                                         .
                                     </motion.span>
