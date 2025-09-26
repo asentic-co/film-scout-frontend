@@ -213,7 +213,7 @@ export default function InfoCard({ setRecords, setInfoOutput, setIsSearching, on
               lineHeight: "1rem",
               flex: 1.6, // 40% more space than the button
             }}
-            placeholder="Search NYC neighborhood, borough, or Times Square..."
+            placeholder="Search NYC neighborhood, borough, or area..."
             value={neighborhood}
             onChange={(e) => {
               setNeighborhood(e.target.value);
