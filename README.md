@@ -1,6 +1,6 @@
 # Film Scout Frontend
 
-![Film Scout](/screenshot.png)
+![Film Scout](./src/assets/screenshot.png)
 
 ## Overview
 
