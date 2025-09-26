@@ -83,14 +83,14 @@ export default function Navbar() {
               App
             </a>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="/news"
               className={location.pathname === "/news" ? "nav-link active" : "nav-link"}
             >
               News
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               to="/about"

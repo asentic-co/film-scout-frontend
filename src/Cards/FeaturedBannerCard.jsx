@@ -21,7 +21,7 @@ export default function FeaturedBannerCard() {
                     </div>
                     <div className="banner-cta-content">
                         <button className="cta-button">
-                            Read News →
+                            Coming Soon
                         </button>
                     </div>
                 </div>
